@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pixel Bird - A modern, responsive Flappy Bird clone with premium pixel art and smooth animations.">
+    <title>Pixel Bird - Premium Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="game-wrapper">
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="score-panel">0</div>
+
+        <!-- Start Screen -->
+        <div id="start-screen" class="ui-layer">
+            <div class="screen">
+                <div class="title">PIXEL BIRD</div>
+                <div class="instructions">
+                    TAP OR SPACE<br>
+                    TO JUMP
+                </div>
+                <div id="start-best" class="best-score">BEST: 0</div>
+                <div class="btn-start" id="start-btn">GET READY!</div>
+            </div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="game-over-screen" class="ui-layer hidden">
+            <div class="screen">
+                <div class="title" style="color: #ff4d4d;">GAME OVER</div>
+                <div id="final-score">SCORE: 0</div>
+                <div id="best-score" class="best-score">BEST: 0</div>
+                <div class="btn-start" id="retry-btn">RETRY</div>
+            </div>
+        </div>
+
+        <!-- Visual Effects -->
+        <div id="flash-effect" class="flash"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
